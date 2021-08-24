@@ -4,7 +4,5 @@ const text = document.querySelector("#text");
 regulator.addEventListener("input", changeText);
 
 function changeText({ target }) {
-  if (target.value) {
-    text.style.fontSize = `${Number(target.value)}px`;
-  }
+  text.style.fontSize = `${target.value * 2}px`;
 }
